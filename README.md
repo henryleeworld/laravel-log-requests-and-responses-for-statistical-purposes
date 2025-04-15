@@ -1,4 +1,4 @@
-# Laravel 10 供作統計用途紀錄請求和回應
+# Laravel 11 供作統計用途紀錄請求和回應
 
 引入 bilfeldt 的 laravel-route-statistics 套件來擴增供作統計用途紀錄請求和回應，按照路由對請求進行分組意味著這個套件將最少的資料儲存到資料庫中，隨後清除舊資料可以進一步改善這一點。
 
@@ -38,5 +38,5 @@ $ npm run build
 ![](https://i.imgur.com/hXYJBK8.png)
 > 登入後進入控制面板
 
-![](https://i.imgur.com/v9nBwoR.png)
+![](https://i.imgur.com/T1GZlRP.png)
 > 記錄請求並將它們組合在一起以取得控制面板路由使用的整合統計資料
