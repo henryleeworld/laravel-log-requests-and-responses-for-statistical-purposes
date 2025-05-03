@@ -12,7 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        $middleware->append(RouteStatisticsMiddleware::class);
+        $middleware->prepend(RouteStatisticsMiddleware::class);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

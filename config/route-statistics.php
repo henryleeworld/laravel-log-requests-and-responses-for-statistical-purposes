@@ -14,6 +14,16 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Store parameters
+    |--------------------------------------------------------------------------
+    |
+    | If this setting is set to true the route parameters will also be logged.
+    |
+    */
+    'store_route_parameters' => env('ROUTE_STATISTICS_STORE_ROUTE_PARAMETERS', false),
+
+    /*
+    |--------------------------------------------------------------------------
     | Aggregation
     |--------------------------------------------------------------------------
     |
@@ -46,4 +56,17 @@ return [
     |
     */
     'queued' => env('ROUTE_STATISTICS_QUEUED', false),
+
+    /*
+    |--------------------------------------------------------------------------
+    | User Model
+    |--------------------------------------------------------------------------
+    |
+    | This is the model used for user relationships.
+    | You can set a custom user model for relationships.
+    |
+    | Leaving this empty will use the model from the 'users' auth provider.
+    |
+    */
+    'user_model' => env('ROUTE_STATISTICS_USER_MODEL'),
 ];
